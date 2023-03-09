@@ -1,0 +1,124 @@
+:root {
+    --cor-primaria: green;
+    --cor-secundaria: rgb(220, 224, 215);
+    --cor-terceira: #f7f7f7;
+}
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3%;
+    height: 20vh;
+    background-color: var(--cor-primaria);
+    font-size: x-large;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    color: lightgray;
+    font-size: xx-large;
+}
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3%;
+    height: 40vh;
+    background-color: var(--cor-secundaria);
+    font-size: x-large;
+    color: var(--cor-primaria);
+}
+.conteudo-secundario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding: 2%;
+    background-color: var(--cor-terceira);
+}
+img {
+    width: 20%;
+    height: 20%;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    color: var(--cor-primaria);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2%;
+    height: 20vh;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terceira);
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 5%;
+    padding-bottom:5%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+figure:hover, figure:focus {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transform: scale(1.5) rotate(-5deg);
+    -webkit-transform: scale(1.5) rotate(-5deg);
+    -o-transform: scale(1.5) rotate(-5deg);
+    -ms-transform: scale(1.5) rotate(-5deg);
+    transform: scale(1.5) rotate(-5deg);
+}
+.planta {
+    height: 150px;
+    width: 150px;
+}
+figure {
+    text-align: center;
+}
+
+@media (max-width:1024px){
+    nav {
+        font-size: medium;
+    }
+    a:hover {
+        color: lightgray;
+        font-size: large;
+    }
+    .produtos {
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+}
+    
